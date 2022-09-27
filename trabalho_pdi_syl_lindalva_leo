@@ -7,3 +7,9 @@
 clc
 clear all
 pkg load image     %roda biblioteca
+
+%leitura da imagem
+Imagem = imread("PDI.jpg");
+imshow(Imagem);
+
+%realcar imagem
