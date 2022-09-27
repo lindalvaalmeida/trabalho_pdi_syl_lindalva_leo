@@ -16,3 +16,27 @@ Imagem = imread("PDI.jpg");
 imshow(Imagem);
 
 %realcar imagem
+
+
+%================================================================================================
+
+
+
+#ESCALA DE CINZA
+Icinza=rgb2gray(Irot);
+figure(2)
+imshow(Icinza);
+figure(3)
+imhist(Irot);
+figure(4)
+imhist(Icinza);
+
+#EQUALIZANDO A IMAGEM
+J=histeq(Icinza);
+figure(5)
+imshow(J);
+Jeq=histeq(J);
+figure(6)
+imhist(Jeq);
+figure(7)
+imshow(Jeq);
